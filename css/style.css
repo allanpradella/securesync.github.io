@@ -1086,6 +1086,66 @@ textarea#comment.update_mail::placeholder {
     color: #252525;
 }
 
+/* form section star */
+
+.lead_capture_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Alterei de 'height' para 'min-height' para evitar problemas de cálculo */
+    padding: 20px; /* Adiciona um pouco de espaçamento para evitar que o formulário fique grudado nas bordas */
+  }
+  
+  .lead_capture_section .container {
+    max-width: 400px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lead_capture_section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .lead_capture_section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .lead_capture_section .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .lead_capture_section select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+  }
+  
+  .lead_capture_section .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .lead_capture_section .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+/* form section end */
 
 /* copyright section end */
 

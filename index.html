@@ -134,12 +134,24 @@
       <div><div class="lead_capture_section layout_padding">
          <div class="container">
             <h2 class="text-center">Fique por dentro das novidades!</h2>
-            <p class="text-center">Inscreva-se para receber atualizações e ofertas exclusivas.</p>
+            <p class="text-center">Inscreva-se e ajude em nossa pesquisa de campo.</p>
             <form action="https://hooks.zapier.com/hooks/catch/20172269/2dtt31l/" method="POST" onsubmit="handleSubmit(event)" class="text-center">
                <input type="text" name="nome" placeholder="Seu Nome" required class="form-control mb-2" />
                <input type="email" name="email" placeholder="Seu E-mail" required class="form-control mb-2" />
+               <input type="number" name="idade" placeholder="Sua Idade" required class="form-control mb-2" />
+               <select name="grau_escolaridade" required class="form-control mb-2">
+                  <option value="" disabled selected>Seu Grau de Escolaridade</option>
+                  <option value="fundamental">Ensino Fundamental</option>
+                  <option value="medio">Ensino Médio</option>
+                  <option value="superior">Ensino Superior</option>
+                  <option value="posgraduacao">Pós-Graduação</option>
+                  <option value="mestrado">Mestrado</option>
+                  <option value="doutorado">Doutorado</option>
+               </select>
                <button type="submit" class="btn btn-primary">Inscrever-se</button>
             </form>
+         </div>
+      </div>      
             
             <div id="thank-you-message" style="display:none; margin-top: 20px;">
                 <h1>Obrigado por se inscrever!</h1>
