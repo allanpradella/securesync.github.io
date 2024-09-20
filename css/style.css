@@ -1086,18 +1086,60 @@ textarea#comment.update_mail::placeholder {
     color: #252525;
 }
 
-/* form section star */
-
-.lead_capture_section {
+/* Container para alinhar a seção about e o formulário */
+.container-about-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Alterei de 'height' para 'min-height' para evitar problemas de cálculo */
-    padding: 20px; /* Adiciona um pouco de espaçamento para evitar que o formulário fique grudado nas bordas */
+    justify-content: space-between; /* Espaçamento entre about e formulário */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre os blocos */
+    padding: 20px;
   }
   
-  .lead_capture_section .container {
-    max-width: 400px;
+  /* Estilos da seção about */
+  .about_section {
+    width: 50%; /* Largura da seção "about" */
+  }
+  
+  .about_taital_box {
+    padding: 20px;
+  }
+  
+  .about_taital {
+    font-size: 40px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .about_taital_1 {
+    font-size: 30px;
+    color: #3b3b3b;
+    margin: 10px 0px;
+  }
+  
+  .about_text {
+    font-size: 16px;
+    color: #232222;
+  }
+  
+  .readmore_btn a {
+    display: inline-block;
+    font-size: 18px;
+    color: #f01c1c;
+    border: 1px solid #f01c1c;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .readmore_btn a:hover {
+    color: #4a4949;
+    border: 1px solid #4a4949;
+  }
+  
+  /* Estilos da seção do formulário */
+  .lead_capture_section {
+    width: 40%;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -1124,8 +1166,6 @@ textarea#comment.update_mail::placeholder {
   }
   
   .lead_capture_section select.form-control {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background-color: #fff;
   }
@@ -1145,7 +1185,6 @@ textarea#comment.update_mail::placeholder {
     background-color: #0056b3;
   }
   
-/* form section end */
 
 /* copyright section end */
 
