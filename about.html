@@ -35,12 +35,12 @@
                </button>
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
-                     <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                     <li class="nav-item"><a class="nav-link" href="coffees.html">Services</a></li>
-                     <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                     <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+                     <li class="nav-item"><a class="nav-link" href="about.html">LANDING PAGE</a></li>
+                     <li class="nav-item"><a class="nav-link" href="coffees.html">SERVIÇOS/a></li>
+                     <li class="nav-item"><a class="nav-link" href="shop.html"></a></li>
+                     <li class="nav-item"><a class="nav-link" href="blog.html"></a></li>
+                     <li class="nav-item"><a class="nav-link" href="contact.html">CONTATO</a></li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                      <div class="login_bt">
@@ -57,17 +57,20 @@
       <!-- header section end -->
       
       <!-- lead capture section start -->
-      <div class="lead_capture_section layout_padding">
+      <div><div class="lead_capture_section layout_padding">
          <div class="container">
             <h2 class="text-center">Fique por dentro das novidades!</h2>
             <p class="text-center">Inscreva-se para receber atualizações e ofertas exclusivas.</p>
-            <form action="submit_lead.php" method="POST" class="text-center">
+            <form action="https://hooks.zapier.com/hooks/catch/20172269/2dtt31l/" method="POST" onsubmit="handleSubmit(event)" class="text-center">
                <input type="text" name="nome" placeholder="Seu Nome" required class="form-control mb-2" />
                <input type="email" name="email" placeholder="Seu E-mail" required class="form-control mb-2" />
                <button type="submit" class="btn btn-primary">Inscrever-se</button>
             </form>
-         </div>
-      </div>
+            
+            <div id="thank-you-message" style="display:none; margin-top: 20px;">
+                <h1>Obrigado por se inscrever!</h1>
+                <p>Você receberá atualizações em seu e-mail.</p>
+            </div>
       <!-- lead capture section end -->
       
       <!-- footer section start -->
@@ -87,12 +90,12 @@
                      <ul>
                         <li>
                            <a href="#">
-                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+01 1234567890</span>
+                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+55 16 99999-9999</span>
                            </a>
                         </li>
                         <li>
                            <a href="#">
-                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
+                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">mack@mackenzista.com</span>
                            </a>
                         </li>
                      </ul>
@@ -116,6 +119,7 @@
       <!-- copyright section end -->
       
       <!-- Javascript files-->
+      <script src="js/form-handler.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
